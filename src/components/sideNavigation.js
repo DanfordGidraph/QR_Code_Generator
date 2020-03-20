@@ -1,30 +1,30 @@
 import React from 'react';
-import logo from "../assets/mdb-react.png";
+import logo from "../assets/logo.png";
 import { MDBListGroup, MDBListGroupItem, MDBIcon } from 'mdbreact';
 import { NavLink } from 'react-router-dom';
 
 const TopNavigation = () => {
     return (
-        <div className="sidebar-fixed position-fixed"  style={{background: '#9a0f98'}}>
+        <div className="sidebar-fixed position-fixed"  style={{background: '#1A2226'}}>
             <a href="#!" className="logo-wrapper waves-effect">
-                <img alt="MDB React Logo" className="img-fluid" src={logo}/>
+                <img alt="QR Code Mania Logo" className="img-fluid" src={logo}/>
             </a>
             <MDBListGroup className="list-group-flush">
-                <NavLink exact={true} to="/" activeClassName="activeClass">
+                <NavLink style={{marginTop: 20, width: '12vw'}} exact={true} to="/" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon icon="chart-pie" className="mr-3"/>
                         TEXT to QR
                     </MDBListGroupItem>
                 </NavLink>
 
-                <NavLink to="/url" activeClassName="activeClass">
+                <NavLink style={{marginTop: 20, width: '12vw'}} to="/url" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon icon="user" className="mr-3"/>
                         URL to QR
                     </MDBListGroupItem>
                 </NavLink>
 
-                <NavLink to="/json" activeClassName="activeClass">
+                <NavLink style={{marginTop: 20, width: '12vw'}} to="/json" activeClassName="activeClass">
                     <MDBListGroupItem>
                         <MDBIcon icon="table" className="mr-3"/>
                         JSON to QR
